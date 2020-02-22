@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-file=no ">
+    <title>sign_up</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/sign_up_1.css">
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+</head>
+<body class="bg">
+<!--未登录主页页头-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--            在width小于768px时显示图标-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">作业提交系统</a>
+            <ul class="nav navbar-nav nav-tabs">
+                <li class="active"><a href="#">登录界面<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+        <!--        以下是导航栏组成内容（除brand与隐藏图标外的主体部分）-->
+        <!--        折叠部分-->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="sign_in.html">注册</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+<!--            <h3 class="panel-title">身份是</h3>-->
+            <div class="form-group choose">
+                <label class="radio-inline">
+                    身份是：
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 学生
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 教师
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> 管理员
+                </label>
+            </div>
+        </div>
+        <div class="panel-body">
+            <from class="form-horizontal" name="signUpForm" action="" method="post">
+                <div class="codeForm form-group has-feedback">
+                    <label for="signUpCode" class="col-sm-2 col-sm-offset-1 control-label">账号：</label>
+                    <div class="col-sm-6">
+                        <input autocomplete="off" name="Account_up" type="text" class="form-control" id="signUpCode" aria-describedby="codeHelpBlock" placeholder="请输入学号、工号">
+                        <span class="accountResultShow glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <span id="codeHelpBlock" class="help-block">  </span>
+                    </div>
+                </div>
+                <div class="passwordForm form-group has-feedback">
+                    <label for="signUpPassword" class="col-sm-2 col-sm-offset-1 control-label">密码：</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="passwordbtn btn btn-default" type="button">
+                                    <span class="passwordspan glyphicon glyphicon-eye-close"></span>
+                                </button>
+                            </span>
+                            <input autocomplete="off" name="Password_up" type="password" class="form-control" id="signUpPassword" aria-describedby="passwordHelpBlock" placeholder="请输入密码">
+                        </div>
+                        <span class="passwordResultShow glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        <span id="passwordHelpBlock" class="help-block">  </span>
+                    </div>
+                </div>
+                <div class="verifyForm form-group has-feedback">
+                    <label for="verifycode" class="col-sm-2 col-sm-offset-1 control-label">验证码：</label>
+                    <div class="col-sm-6">
+                        <input autocomplete="off" name="Verify_up" type="text" class="form-control" id="verifycode" aria-describedby="verifyHelpBlock" placeholder="请输入验证码">
+                        <span class="verifyResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>
+                        <span id="verifyHelpBlock" class="help-block">  </span>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="verifyImg"></span>
+
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-2">
+                        <button type="button" class="signUpBtn btn btn-primary btn-lg" aria-describedby="signUpHelpBlock">登录</button>
+                        <span id="signUpHelpBlock" class="help-block"> </span>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="signInA" ><a href="sign_in.html">还没账号，点我注册>>></a></span>
+                    </div>
+
+                </div>
+            </from>
+
+
+        </div>
+    </div>
+
+
+<!--    <div class="jumbotron submitWithoutSignIn">-->
+<!--        <div class="container">-->
+<!--            <from class="form-horizontal" name="signUpForm" action="" method="post">-->
+<!--                <div class="form-group">-->
+<!--                    <label class="radio-inline">-->
+<!--                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 学生-->
+<!--                    </label>-->
+<!--                    <label class="radio-inline">-->
+<!--                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 教师-->
+<!--                    </label>-->
+<!--                    <label class="radio-inline">-->
+<!--                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> 管理员-->
+<!--                    </label>-->
+<!--                </div>-->
+<!--                <div class="codeForm form-group has-feedback">-->
+<!--                    <label for="signUpCode" class="col-sm-2 col-sm-offset-1 control-label">账号：</label>-->
+<!--                    <div class="col-sm-6">-->
+<!--                        <input name="Account_up" type="text" class="form-control" id="signUpCode" aria-describedby="codeHelpBlock" placeholder="请输入学号、工号">-->
+<!--                        <span class="accountResultShow glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>-->
+<!--                        <span id="codeHelpBlock" class="help-block">  </span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="passwordForm form-group has-feedback">-->
+<!--                    <label for="signUpPassword" class="col-sm-2 col-sm-offset-1 control-label">密码：</label>-->
+<!--                    <div class="col-sm-6">-->
+<!--                        <div class="input-group">-->
+<!--                            <span class="input-group-btn">-->
+<!--                                <button class="passwordbtn btn btn-default" type="button">-->
+<!--                                    <span class="passwordspan glyphicon glyphicon-eye-close"></span>-->
+<!--                                </button>-->
+<!--                            </span>-->
+<!--                            <input name="Password_up" type="password" class="form-control" id="signUpPassword" aria-describedby="passwordHelpBlock" placeholder="请输入密码">-->
+<!--                        </div>-->
+<!--                        <span class="passwordResultShow glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>-->
+<!--                        <span id="passwordHelpBlock" class="help-block">  </span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="verifyForm form-group has-feedback">-->
+<!--                    <label for="verifycode" class="col-sm-2 col-sm-offset-1 control-label">验证码：</label>-->
+<!--                    <div class="col-sm-6">-->
+<!--                        <input name="Verify_up" type="text" class="form-control" id="verifycode" aria-describedby="verifyHelpBlock" placeholder="请输入验证码">-->
+<!--                        <span class="verifyResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>-->
+<!--                        <span id="verifyHelpBlock" class="help-block">  </span>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-3">-->
+<!--                        <span class="verifyImg"></span>-->
+
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                    <div class="col-sm-offset-4 col-sm-2">-->
+<!--                        <button type="button" class="signUpBtn btn btn-primary btn-lg" aria-describedby="signUpHelpBlock">登录</button>-->
+<!--                        <span id="signUpHelpBlock" class="help-block"> </span>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-4">-->
+<!--                        <span class="signInA" ><a href="sign_in.html">还没账号，点我注册>>></a></span>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </from>-->
+<!--&lt;!&ndash;            <div class="feedback_info">dsfdsfhdsfjdsfsd</div>&ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+
+</body>
+<script src="../js/sign_up.js"></script>
+</html>

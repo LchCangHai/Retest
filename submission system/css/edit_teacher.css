@@ -1,0 +1,42 @@
+.bg{
+    background:url("../image/background-1.jpg") no-repeat content-box fixed;
+}
+.fileDiv {
+    width: 100px;
+    height: 34px;
+    background-color: #00a2d4;
+    line-height: 34px;
+    text-align: center;
+    color: #FFF;
+    border-radius: 3px;
+    /*border: 1px solid #999;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.fileDiv input {
+    width: 100px;
+    height: 34px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+}
+.testCodeForm{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-file=no ">
+    <title>manage_administrator</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/manage_administrator.css">
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+</head>
+<body class="bg">
+<div class="cover">
+    <span>
+        您尚未登录。。。
+    </span>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">作业提交系统</a>
+            <ul class="nav navbar-nav nav-tabs">
+                <li class="active"><a href="#">账号管理<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="Administrator_homepage.html">主页</a></li>
+                <li><a href="../index.html">管理员</a></li>
+                <li class="sign_out"><a href="#">退出</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="search col-sm-offset-8 col-sm-4 col-xs-offset-4 col-xs-8 input-group">
+        <input type="text" class="search_inp form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+                <button class="search_btn btn btn-info" type="button">搜索</button>
+            </span>
+    </div>
+    <div class="table_">
+        <div class="btn_ btn-group">
+            <button type="button" class=" btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="iden">学生</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="student">学生</a></li>
+                <li><a href="#" class="teacher">教师</a></li>
+            </ul>
+            <button type="button" class="initial_btn btn btn-primary">初始化</button>
+            <button type="button" class="delete_btn btn btn-primary">删除</button>
+            <span class="checkedNum"></span>
+        </div>
+        <table class="table table-hover table-bordered table-striped table-responsive">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>账号</th>
+                <th>姓名</th>
+                <th>密码初始化</th>
+                <th>删除账号</th>
+            </tr>
+            </thead>
+            <tbody class="manage">
+            <tr class="clone1">
+                <td class="checkbox_">
+                    <label>
+                        <input class="checkbox_" type="checkbox" name="beSelected" autocomplete="off">
+                        <span></span>
+                    </label>
+                </td>
+                <td class="account">11111</td>
+                <td class="name"></td>
+                <td class="initial btn_a">初始化</td>
+                <td class="delete btn_a">删除</td>
+            </tr>
+            <tr class="_clone1">
+                <td class="checkbox_">
+                    <label>
+                        <input class="checkbox_" type="checkbox" name="beSelected" autocomplete="off">
+                        <span></span>
+                    </label>
+                </td>
+                <td class="account">11111</td>
+                <td class="name"></td>
+                <td class="initial btn_a">初始化</td>
+                <td class="delete btn_a">删除</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<script src="../js/manage_administrator.js"></script>
+</body>
+
+</html>

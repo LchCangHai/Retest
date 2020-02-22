@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-file=no ">
+    <title>student_homepage</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/student_homepage_1.css">
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+</head>
+<body class="bg">
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">作业提交系统</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">学生 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="inName">姓名</a></li>
+                        <li><a href="#" class="inAccount">学号</a></li>
+                        <li><a href="#" class="inType">类别</a></li>
+                        <li><a href="#" class="inGrade">年级</a></li>
+                    </ul>
+                </li>
+                <li class="sign_out"><a href="../index.html">退出</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="container">
+        <div >
+            <ul class="nav nav-tabs nav-style" id="otherInfoTab">
+                <li class="active"><a href="#my_information">我的资料</a></li>
+                <li><a href="#password">密码修改</a></li>
+                <li><a href="#mytest">我的考核</a></li>
+                <li><a href="#submitted">已提交</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="my_information">
+                    <div class="information">
+                        <form class="form-horizontal">
+                            <div class="name form-group">
+                                <label for="Name" class="col-sm-2 col-sm-offset-2 control-label">姓名：</label>
+                                <div class="col-sm-5 ">
+                                    <input readonly  placeholder="姓名" type="text" class="form-control" id="Name" aria-describedby="nameHelpBlock">
+                                </div>
+                            </div>
+                            <div class="code form-group">
+                                <label for="Code" class="col-sm-2 col-sm-offset-2 control-label">账号：</label>
+                                <div class="col-sm-5 ">
+                                    <input readonly placeholder="账号" type="text" class="form-control" id="Code" aria-describedby="nameHelpBlock" >
+                                </div>
+                            </div>
+                            <div class="typeForm form-group">
+                                <label  class="col-sm-2 col-sm-offset-2 control-label">类别：</label>
+                                <div class="col-sm-5">
+                                    <select disabled class="Type form-control">
+                                        <option value="" disabled selected hidden>请进行选择</option>
+                                        <option value="Web">Web</option>
+                                        <option value="Java">Java</option>
+                                        <option value="Go">Go</option>
+                                        <option value="Python">Python</option>
+                                        <option value="Unity3D">Unity3D</option>
+                                        <option value="PM">产品经理</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="gradeForm form-group">
+                                <label  class="col-sm-2 col-sm-offset-2 control-label">年级：</label>
+                                <div class="col-sm-5">
+                                    <select disabled class="Grade form-control">
+                                        <option value="" disabled selected hidden>请进行选择</option>
+                                        <option value="19">19</option>
+                                        <option value="18">18</option>
+                                        <option value="17">17</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="modify">
+                                <button type="button" class="btnConfirm1 btn btn-info">确定</button>
+                                <button type="button" class="btnCancel1 btn btn-info">取消</button>
+                                <button type="button" class="btnModify1 btn btn-info">修改</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane" id="password">
+                    <div class="information">
+                        <form class="form-horizontal">
+                            <div class="opasswordForm form-group has-feedback">
+                                <label for="oldPw" class="col-sm-3 col-sm-offset-1 control-label">旧密码：</label>
+                                <div class="col-sm-5 ">
+                                    <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="oldpasswordbtn btn btn-default" type="button">
+                                        <span class="oldpasswordspan glyphicon glyphicon-eye-close"></span>
+                                    </button>
+                                </span>
+                                        <input type="password" class="form-control" id="oldPw" aria-describedby="opwHelpBlock" placeholder="请输入旧密码">
+                                    </div>
+                                    <span class="opwResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>
+                                    <span id="opwHelpBlock" class="help-block">  </span>
+                                </div>
+                            </div>
+                            <div class="npasswordForm form-group has-feedback">
+                                <label for="newPw" class="col-sm-3 col-sm-offset-1 control-label">新密码：</label>
+                                <div class="col-sm-5 ">
+                                    <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="npasswordbtn btn btn-default" type="button">
+                                        <span class="npasswordspan glyphicon glyphicon-eye-close"></span>
+                                    </button>
+                                </span>
+                                        <input type="password" class="form-control" id="newPw" aria-describedby="npwHelpBlock" placeholder="请输入新密码">
+                                    </div>
+                                    <span class="npwResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>
+                                    <span id="npwHelpBlock" class="help-block">  </span>
+                                </div>
+                            </div>
+                            <div class="renpwForm form-group has-feedback ">
+                                <label for="renpw" class="col-sm-3 col-sm-offset-1 control-label">确认密码：</label>
+                                <div class="col-sm-5 ">
+                                    <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="renpasswordbtn btn btn-default" type="button">
+                                        <span class="renpasswordspan glyphicon glyphicon-eye-close"></span>
+                                    </button>
+                                </span>
+                                        <input type="password" class="form-control" id="renpw" aria-describedby="renpwHelpBlock" placeholder="再次输入密码">
+                                    </div>
+                                    <span class="renpwResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>
+                                    <span id="renpwHelpBlock" class="help-block">  </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-5 col-sm-8">
+                                    <button type="button" class="signInBtn btn btn-primary">提交</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane" id="mytest">
+                    <div class="information_tab">
+                        <div class="search col-sm-offset-8 col-sm-4 col-xs-offset-4 col-xs-8 input-group">
+                            <input type="text" class="search_inp1 form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="search_btn1 btn btn-primary" type="button">搜索</button>
+                            </span>
+                        </div>
+                        <table class="table tableStuTwo table-bordered table-hover table-sm table-striped">
+                            <thead>
+                            <tr>
+                                <th>考核名称</th>
+                                <th>标识码</th>
+                                <th>发布人</th>
+                                <th>等级</th>
+                                <th>类别</th>
+                                <th>截止时间</th>
+                                <th>提交</th>
+                            </tr>
+                            </thead>
+                            <tbody class="mytest_">
+                            <tr class="clone1">
+                                <td class="Name1"></td>
+                                <td class="Code1"></td>
+                                <td class="Teacher1"></td>
+                                <td class="Grade1"></td>
+                                <td class="Type1"></td>
+                                <td class="State1"></td>
+                                <td class="submit1 btn_a">提交</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagei">
+                            <button  type="button" id="up1" class="btnShow">上一页</button>
+                            <span>第<span class="nowPage1"></span>页，共<span class="totlePage1"></span>页</span>
+                            <button  type="button" id="down1" class="btnShow">下一页</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="submitted">
+                    <div class="information_tab">
+                        <div class="search col-sm-offset-8 col-sm-4 col-xs-offset-4 col-xs-8 input-group">
+                            <input type="text" class="search_inp2 form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="search_btn2 btn btn-primary" type="button">搜索</button>
+                            </span>
+                        </div>
+                        <table class="table tableStuTwo table-bordered table-hover table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>名称</th>
+                                    <th>标识码</th>
+                                    <th>发布人</th>
+                                    <th>等级</th>
+                                    <th>类别</th>
+                                    <th>上传时间</th>
+                                    <th>审核情况</th>
+                                    <th>下载</th>
+                                    <th>删除</th>
+
+                                </tr>
+                            </thead>
+                            <tbody class="submit_">
+                            <tr class="clone2">
+                                <td>
+                                    <label>
+                                        <input class="checkbox_" type="checkbox" name="beSelected" autocomplete="off">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td class="Name2"></td>
+                                <td class="Code2"></td>
+                                <td class="Teacher2"></td>
+                                <td class="Grade2"></td>
+                                <td class="Type2"></td>
+                                <td class="Uptime2"></td>
+                                <td class="State2">
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
+                                        <span class="status_content">未通过</span>
+                                    </button>
+                                </td>
+                                <td class="Download2 btn_a">下载</td>
+                                <td class="delete2 btn_a">删除</td>
+                            </tr>
+                            <tr class="_clone2">
+                                <td>
+                                    <label>
+                                        <input class="checkbox_" type="checkbox" name="beSelected" autocomplete="off">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td class="Name2"></td>
+                                <td class="Code2"></td>
+                                <td class="Teacher2"></td>
+                                <td class="Grade2"></td>
+                                <td class="Type2"></td>
+                                <td class="Uptime2"></td>
+                                <td class="State2">
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
+                                        <span class="status_content">已删除</span>
+                                    </button>
+                                </td>
+                                <td class="Download2 btn_a">下载</td>
+                                <td class="delete2 btn_a">删除</td>
+                            </tr>
+                            <tr class="_clone2">
+                                <td>
+                                    <label>
+                                        <input class="checkbox_" type="checkbox" name="beSelected" autocomplete="off">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td class="Name2"></td>
+                                <td class="Code2"></td>
+                                <td class="Teacher2"></td>
+                                <td class="Grade2"></td>
+                                <td class="Type2"></td>
+                                <td class="Uptime2"></td>
+                                <td class="State2">
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
+                                        <span class="status_content">已删除</span>
+                                    </button>
+                                </td>
+                                <td class="Download2 btn_a">下载</td>
+                                <td class="delete2 btn_a">删除</td>
+                            </tr>
+
+
+
+                            </tbody>
+
+                        </table>
+                        <div class="pagei">
+                            <button  type="button" id="up2" class="btnShow">上一页</button>
+                            <span>第<span class="nowPage2"></span>页，共<span class="totlePage2"></span>页</span>
+                            <button  type="button" id="down2" class="btnShow">下一页</button>
+                        </div>
+                        <div class="toolbar">
+                            <button class="deleteUnvalid btn btn-primary">删除无效作业</button>
+                            <button class="delete btn btn-primary">删除</button>
+                            <button class="download btn btn-primary">下载</button>
+                            <span class="checkedNum"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+<script src="../js/student_homepage_1.js"></script>
+<script src="../js/stu_download.js"></script>
+<script src="../js/stu_table1.js"></script>
+<script src="../js/stu_table2.js"></script>
+</body>
+
+</html>

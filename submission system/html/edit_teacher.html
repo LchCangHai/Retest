@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-file=no ">
+    <title>edit_teacher</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/edit_teacher.css">
+    <link rel="stylesheet" href="../jeDAte/jedate.css">
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+</head>
+<body class="bg">
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">作业提交系统</a>
+            <ul class="nav navbar-nav nav-tabs">
+                <li class="active"><a href="#">发布考核<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="teacher_homepage.html">主页</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">教师 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="inName">姓名</a></li>
+                        <li><a href="#" class="inAccount">工号</a></li>
+                        <li><a href="#" class="inPhone">联系方式</a></li>
+                        <li><a href="#" class="inMajor">主教科目</a></li>
+                    </ul>
+                </li>
+                <li class="sign_out"><a href="#">退出</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="panel panel panel-info">
+        <div class="panel-heading">
+            <h1 class="panel-title">本题标识码:<span id="codeShow"></span></h1>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal editForm">
+
+                <div class="testCodeForm form-group has-feedback ">
+                    <label for="testCode" class="col-sm-2 col-sm-offset-1 control-label">考核标识码：</label>
+                    <div class="col-sm-6 ">
+                        <input readonly name="code" type="text" class="form-control" id="testCode" placeholder="考核标识码">
+                    </div>
+                </div>
+
+                <div class="testNameForm form-group has-feedback ">
+                    <label for="testName" class="col-sm-2 col-sm-offset-1 control-label">考核名称：</label>
+                    <div class="col-sm-6 ">
+                        <input name="name" type="text" class="form-control" id="testName" aria-describedby="nameHelpBlock" placeholder="请输入考核名">
+                        <span class="nameResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>
+                        <span id="testNameHelpBlock" class="help-block">  </span>
+                    </div>
+                </div>
+
+                <div class="typeForm form-group">
+                    <label class="col-sm-2 col-sm-offset-1 control-label">考核类别：</label>
+                    <div class="col-sm-6">
+                        <select disabled name="type" class="type form-control" aria-describedby="typeHelpBlock">
+                            <option value="" disabled selected hidden>请进行选择</option>
+                            <option value="Web">Web</option>
+                            <option value="Java">Java</option>
+                            <option value="Go">Go</option>
+                            <option value="Python">Python</option>
+                            <option value="Unity3D">Unity3D</option>
+                            <option value="产品经理">产品经理</option>
+                        </select>
+                        <span id="typeHelpBlock" class="help-block">  </span>
+                    </div>
+                </div>
+
+                <div class="gradeForm form-group">
+                    <label class="col-sm-2 col-sm-offset-1 control-label">考核等级：</label>
+                    <div class="col-sm-6">
+                        <select disabled name="grade" class="grade form-control" aria-describedby="gradeHelpBlock">
+                            <option value="" disabled selected hidden>请进行选择</option>
+                            <option value="19">19</option>
+                            <option value="18">18</option>
+                            <option value="17">17</option>
+                        </select>
+                        <span id="gradeHelpBlock" class="help-block">  </span>
+                    </div>
+                </div>
+
+                <div class="dtimeForm form-group has-feedback ">
+                    <label for="dtime" class="col-sm-2 col-sm-offset-1 control-label">截止时间：</label>
+                    <div class="col-sm-6 ">
+                        <input name="end" type="text" class="form-control date-picker" id="dtime" data-date-format="yyyy-mm-dd" placeholder="点击选择">
+                    </div>
+                </div>
+
+                <div class="fileForm form-group">
+                    <label class="col-sm-2 col-sm-offset-1 control-label">上传考核：</label>
+                    <div class="col-sm-6">
+                        <div class="fileDiv">
+                            <span>选择文件</span>
+                            <input name="sfile" type="file" class="upload1" id="upLoadFile" aria-describedby="fileHelpBlock">
+                        </div>
+                        <span id="fileHelpBlock" class="help-block">  </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-7 col-sm-4">
+                        <button type="button" class="btnConfirm1 btn btn-primary">确定修改</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script src="../jeDAte/jedate.min.js"></script>
+<script src="../js/edit_teacher.js"></script>
+</body>
+</html>

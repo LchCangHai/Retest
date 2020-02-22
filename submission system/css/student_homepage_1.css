@@ -1,0 +1,168 @@
+.bg{
+    background: url(../image/background-1.jpg) no-repeat center center;
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+div.tab-pane{
+    /*border:black solid 1px;*/
+    height:500px;
+    padding:0 20px ;
+    /*overflow: scroll;*/
+}
+.nav-style a{
+    color:black;
+}
+
+
+.modify{
+     float: right;
+     padding-right: 100px;
+ }
+.information,
+.information_tab{
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    padding:20px 10px;
+    border-radius: 20px;
+    width:100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    /*overflow: scroll;*/
+}
+.information_tab{
+    /*min-width:900px;*/
+    padding-top: 0;
+    border-radius: 0;
+    overflow: scroll;
+}
+.btnConfirm1{
+    display: none;
+}
+.btnCancel1{
+    display: none;
+}
+
+.help-block{
+    font-size: 12px;
+}
+
+.showTestTable{
+    background-color: white;
+    width:100%;
+    padding:20px 0;
+    margin:0 10px;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td,
+.table-striped > tbody > tr:nth-child(2n+1) > th {
+    /*background-color:#ececec;*/
+}
+
+th,
+td{
+    text-align: center;
+    vertical-align: middle;
+    max-width: 70px;
+    min-width: 30px;
+    /*width: 40px;*/
+    /*height: 20px;*/
+}
+td >label{
+    /*width: 30px;*/
+}
+thead{
+    color: white;
+    background-color: rgba(41,41,41,0.85);
+}
+
+.clone1,
+.clone2{
+    display: none;
+}
+td>a{
+    width:100px;
+}
+.selected{
+    /*background-color: gray;*/
+}
+div.toolbar{
+    /*border:black solid 1px;*/
+    /*width:200px;*/
+    float: right;
+    padding: 10px;
+    padding-top: 0;
+}
+.delete,
+.download{
+    display: none;
+}
+.checkedNum{
+    /*border: black solid 1px;*/
+    position: relative;
+    top:10px;
+    font-size: 12px;
+}
+.btn_a{
+    color: deepskyblue;
+}
+.btn_a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    /*color:blue;*/
+}
+.btn_a:active{
+    color: blue;
+}
+.search{
+    padding: 5px 0;
+}
+div.tab-pane{
+    position: relative;
+    /*border:black solid 2px;*/
+}
+.pagei{
+    width:100%;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:-18px;
+}
+
+.btnShow {
+    size: 12px;
+    width: 70px;
+    height: 20px;
+    background-color: rgba(88, 88, 88, 0.05);
+    border: 1px solid #5ca7ea;
+    border-radius: 10%;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-file=no ">
+    <title>homePage-submissionSystem</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_1.css">
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</head>
+<body class="bg">
+<!--<script>-->
+<!--    $(document).ready(function(){-->
+<!--        const inputElement = document.getElementById("upLoadFile");-->
+<!--        inputElement.addEventListener("change", handleFiles, false);-->
+<!--        function handleFiles() {-->
+<!--            const fileList = this.files; /* now you can work with the file list */-->
+<!--            let data=window.URL.createObjectURL(this.files[0]);//转blob数据   this.files[0]是数据流-->
+<!--            console.log(data);-->
+
+<!--            let fileData=this.files[0];-->
+<!--            console.log(this.files);-->
+<!--            console.log(data);-->
+
+<!--            var reader  = new FileReader();-->
+<!--            var ImgObj=new Image();-->
+<!--            // var ImgObj = document.querySelector('img');//显示在页面上-->
+<!--            reader.addEventListener("load", function () {-->
+<!--                ImgObj.src = reader.result;-->
+<!--                console.log(reader.result);//reader.result就是data:URL格式的字符串（base64编码）以表示图片-->
+<!--            }, false);-->
+<!--            if (fileData) {-->
+<!--                reader.readAsDataURL(fileData);-->
+<!--            }-->
+
+<!--            //下载-->
+<!--            // const tmpa = document.createElement('a');-->
+<!--            // tmpa.download = '图片测试存储';-->
+<!--            // tmpa.href = data; // 绑定a标签-->
+<!--            // tmpa.click(); // 模拟点击实现下载-->
+<!--            // setTimeout(() => { // 延时释放-->
+<!--            //     window.URL.revokeObjectURL(tmpa.href); // 用URL.revokeObjectURL()来释放这个object URL-->
+<!--            // }, 100);-->
+
+<!--        }-->
+<!--    });-->
+
+<!--</script>-->
+<!--未登录主页页头-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--            在width小于768px时显示图标-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">作业提交系统</a>
+        </div>
+<!--        <img src="" height="200" alt="Image preview...">-->
+        <!--        以下是导航栏组成内容（除brand与隐藏图标外的主体部分）-->
+        <!--        折叠部分-->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+<!--                <li><a href="html/sign_up.html">登录</a></li>-->
+<!--                <li><a href="html/sign_in.html">注册</a></li>-->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+    <div class="container">
+
+        <div class="holder">
+            <button class="signup button">登录</button>
+            <button class="signin button">注册</button>
+        </div>
+
+        <div class="submitWithoutSignIn">
+<!--            <div class="container">-->
+<!--                <form class="form-horizontal " >-->
+<!--                    <div class="nameForm form-group has-feedback ">-->
+<!--                        <label for="signUpName" class="col-sm-2 col-sm-offset-1 control-label">姓名：</label>-->
+<!--                        <div class="col-sm-8 ">-->
+<!--                            <input type="text" class="form-control" id="signUpName" aria-describedby="nameHelpBlock" placeholder="请输入姓名">-->
+<!--                            <span class="nameResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>-->
+<!--                            <span id="nameHelpBlock" class="help-block">  </span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="codeForm form-group has-feedback">-->
+<!--                    <label for="signUpCode" class="col-sm-2 col-sm-offset-1 control-label">学号：</label>-->
+<!--                    <div class="col-sm-8">-->
+<!--                        <input type="text" class="form-control" id="signUpCode" aria-describedby="codeHelpBlock" placeholder="请输入学号">-->
+<!--                        <span class="codeResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>-->
+<!--                        <span id="codeHelpBlock" class="help-block">  </span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                    <div class="typeForm form-group">-->
+<!--                        <label class="col-sm-2 col-sm-offset-1 control-label">类别：</label>-->
+<!--                        <div class="col-sm-8">-->
+<!--                            <select class="type form-control" aria-describedby="typeHelpBlock">-->
+<!--                                <option value="" disabled selected hidden>请进行选择</option>-->
+<!--                                <option value="Web">Web</option>-->
+<!--                                <option value="Java">Java</option>-->
+<!--                                <option value="Go">Go</option>-->
+<!--                                <option value="Python">Python</option>-->
+<!--                                <option value="Unity3D">Unity3D</option>-->
+<!--                                <option value="产品经理">产品经理</option>-->
+<!--                            </select>-->
+<!--                            <span id="typeHelpBlock" class="help-block">  </span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="gradeForm form-group">-->
+<!--                        <label class="col-sm-2 col-sm-offset-1 control-label">年级：</label>-->
+<!--                        <div class="col-sm-8">-->
+<!--                            <select class="grade form-control" aria-describedby="gradeHelpBlock">-->
+<!--                                <option value="" disabled selected hidden>请进行选择</option>-->
+<!--                                <option value="19">19</option>-->
+<!--                                <option value="18">18</option>-->
+<!--                                <option value="17">17</option>-->
+<!--                            </select>-->
+<!--                            <span id="gradeHelpBlock" class="help-block">  </span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label class="control-label col-sm-2 col-sm-offset-1" for="upLoadFile">上传作业：</label>-->
+<!--                        <div class="col-sm-8" >-->
+<!--                            <input id="upLoadFile" type="file" accept="" onchange="handleFiles(this.files)">-->
+<!--&lt;!&ndash;                            <div class="fileAddress"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            onchange="handleFiles(this.files)"&ndash;&gt;-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+
+
+
+<!--                    <div>-->
+
+<!--                    </div>-->
+<!--&lt;!&ndash;                    <div class="import-box pr" >&ndash;&gt;-->
+<!--&lt;!&ndash;                        <span class="model-address-txt">导入文件：</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="text" class="address-input Js_address-input input-wid" readonly>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <label class="file-box" for="file">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span class="look-file">浏览</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <input id="file" type="file" class="file-input Js_file-input" >&ndash;&gt;-->
+<!--&lt;!&ndash;                        </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+
+
+
+<!--                    <div class="form-group">-->
+<!--                        <div class="col-sm-offset-3 col-sm-8">-->
+<!--                            <button type="submit" class="btn btn-primary ">提交</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+        </div>
+
+
+    </div>
+
+
+</body>
+<script type="text/javascript" src="js/index_1.js"></script>
+</html>

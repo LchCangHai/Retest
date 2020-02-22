@@ -1,0 +1,96 @@
+.bg{
+    background:url("../image/background-1.jpg") no-repeat content-box fixed;
+}
+.panel,.panel-heading{
+    border-radius: 10px;
+}
+.testDetail{
+    margin: 20px 10px;
+    margin-top: 0;
+}
+.title1{
+    font-family: 微軟正黑體;
+    font-size: 17px;
+    font-weight: 600;
+}
+.content1{
+    font-family: 等线;
+    font-size: 15px;
+    text-indent: 2em;
+    text-align: left;
+}
+.drag_box{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border:black dashed 2px;
+    background-color: rgba(242,242,242,0.85);
+}
+.drag_box>span{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgba(185,185,185,0.85);
+}
+
+.fileDiv {
+    width: 100px;
+    height: 40px;
+    background-color: #00a2d4;
+    line-height: 40px;
+    text-align: center;
+    color: #FFF;
+    border-radius: 3px;
+    /*border: 1px solid #999;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.fileDiv input {
+    width: 100px;
+    height: 40px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+}
+.nameSpace{
+    font-family: 微軟正黑體;
+    margin: 5px 0;
+    display: none;
+}
+.tip{
+    color:red;
+}
+
+.tcContent{
+    display: none;
+    word-spacing: 20px;
+}
+.tcaret{
+    width:120px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

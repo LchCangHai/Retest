@@ -1,0 +1,91 @@
+.bg{
+    background: url(../image/background_7.jpg) no-repeat center center;
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.cover{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color:black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgb(0, 0, 0);
+    filter: alpha(opacity=60);
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+.search{
+    margin-bottom: 10px;
+}
+.table_{
+    background-color: white;
+    border-radius: 10px;
+    padding:20px 5px;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td,
+.table-striped > tbody > tr:nth-child(2n+1) > th {
+    /*background-color:#ececec;*/
+}
+
+th,
+td{
+    text-align: center;
+    max-width: 70px;
+    min-width: 30px;
+    /*width: 40px;*/
+    /*height: 20px;*/
+    word-break:break-all;
+
+}
+td >label{
+    /*width: 30px;*/
+}
+/*thead{*/
+/*    color: white;*/
+/*    background-color: rgba(41,41,41,0.85);*/
+/*}*/
+.btn_a{
+    color: deepskyblue;
+}
+.btn_a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    /*color:blue;*/
+}
+.btn_a:active{
+    color: blue;
+}
+.checkedNum{
+    /*border: black solid 1px;*/
+    position: relative;
+    top:10px;
+    font-size: 12px;
+}
+.btn_{
+    margin-bottom: 5px;
+}
+.delete_btn,
+.initial_btn{
+    display: none;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+._clone2,.clone1{
+    display: none;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-file=no ">
+    <title>url_submit</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/url_submit.css">
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+</head>
+<body class="bg">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--            在width小于768px时显示图标-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">作业提交系统</a>
+        </div>
+        <!--        <img src="" height="200" alt="Image preview...">-->
+        <!--        以下是导航栏组成内容（除brand与隐藏图标外的主体部分）-->
+        <!--        折叠部分-->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav result">
+                <li class="active">
+                    <a href="#">
+                        <span class="searchresultShow glyphicon glyphicon-ok" aria-hidden="true"></span>
+                        <span class="testName">题目名称</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="sign_up.html">登录</a></li>
+                <li><a href="sign_in.html">注册</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="jumbotron submitWithoutSignIn">
+        <div class="container">
+            <form class="form-horizontal " >
+                <div class="nameForm form-group has-feedback ">
+                    <label for="signUpName" class="col-sm-2 col-sm-offset-1 control-label">姓名：</label>
+                    <div class="col-sm-8 ">
+                        <input name="name" type="text" class="form-control" id="signUpName" aria-describedby="nameHelpBlock" placeholder="请输入姓名">
+                        <span class="nameResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>
+                        <span id="nameHelpBlock" class="help-block">  </span>
+                    </div>
+                </div>
+                <div class="codeForm form-group has-feedback">
+                    <label for="signUpCode" class="col-sm-2 col-sm-offset-1 control-label">学号：</label>
+                    <div class="col-sm-8">
+                        <input name="studentID" type="text" class="form-control" id="signUpCode" aria-describedby="codeHelpBlock" placeholder="请输入学号">
+                        <span class="codeResultShow glyphicon  form-control-feedback" aria-hidden="true"></span>
+                        <span id="codeHelpBlock" class="help-block">  </span>
+                    </div>
+                </div>
+                <div>
+<!--                <div class="typeForm form-group">-->
+<!--                    <label class="col-sm-2 col-sm-offset-1 control-label">类别：</label>-->
+<!--                    <div class="col-sm-8">-->
+<!--                        <select name="type" class="type form-control" aria-describedby="typeHelpBlock">-->
+<!--                            <option value="" disabled selected hidden>请进行选择</option>-->
+<!--                            <option value="Web">Web</option>-->
+<!--                            <option value="Java">Java</option>-->
+<!--                            <option value="Go">Go</option>-->
+<!--                            <option value="Python">Python</option>-->
+<!--                            <option value="Unity3D">Unity3D</option>-->
+<!--                            <option value="产品经理">产品经理</option>-->
+<!--                        </select>-->
+<!--                        <span id="typeHelpBlock" class="help-block">  </span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="gradeForm form-group">-->
+<!--                    <label class="col-sm-2 col-sm-offset-1 control-label">年级：</label>-->
+<!--                    <div class="col-sm-8">-->
+<!--                        <select name="level" class="grade form-control" aria-describedby="gradeHelpBlock">-->
+<!--                            <option value="" disabled selected hidden>请进行选择</option>-->
+<!--                            <option value="19">19</option>-->
+<!--                            <option value="18">18</option>-->
+<!--                            <option value="17">17</option>-->
+<!--                        </select>-->
+<!--                        <span id="gradeHelpBlock" class="help-block">  </span>-->
+<!--                    </div>-->
+<!--                </div>-->
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 col-sm-offset-1" for="upLoadFile">上传作业：</label>
+                    <div class="col-sm-9" >
+                        <div class="fileDiv">
+                            <span>选择文件</span>
+                            <input name="sfile" type="file" class="upload1" id="upLoadFile">
+                        </div>
+<!--                        <input id="upLoadFile" type="file" accept="" onchange="handleFiles(this.files)">-->
+
+                        <!--                            <div class="fileAddress"></div>-->
+                        <!--                            onchange="handleFiles(this.files)"-->
+                    </div>
+                    <div class="nameSpace col-sm-9 col-sm-offset-3">
+                        您上传的文件为：
+                        <span class="info2"></span>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-3 drag_box">
+                        <div class="show_box"><span>拖拽到此处上传</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-offset-3 tipContain">
+                    <span class="tip">fghdhdgfgsd</span>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-8">
+                        <button type="button" class="btn btn-primary modify_btn">提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="../js/url_submit.js"></script>
+</body>
+</html>
