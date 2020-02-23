@@ -1,6 +1,6 @@
 
 function downByBlob_1(parameters , FileName) {
-    var downloadURL = "../teacher/download";
+    var downloadURL = "../user/download";
     let xhr = new XMLHttpRequest()
     let fileName = FileName + '.zip' // 文件名称
     xhr.open('post', downloadURL, true);
@@ -45,7 +45,7 @@ function downByBlob_1(parameters , FileName) {
 }
 
 function downByBlob_2(parameters , FileName) {
-    var downloadURL = "../teacher/downloadAll";
+    var downloadURL = "../user/downloadAll";
     let xhr = new XMLHttpRequest()
     let fileName = FileName + '.zip' // 文件名称
     xhr.open('post', downloadURL, true);
@@ -91,7 +91,7 @@ function downByBlob_2(parameters , FileName) {
 //单项下载
 $(document).on('click','.Dload',function () {
     let testCode = $(this).closest('tr').children('.Account1').html();
-    let name = $(this).closest('tr').children('.name1').html();
+    let name = $(this).closest('tr').children('.Name1').html();
     // let code = $(this).closest('tr').children('.Code2').html();
     let data = {
         studentID:testCode
