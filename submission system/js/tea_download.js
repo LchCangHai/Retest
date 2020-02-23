@@ -1,6 +1,6 @@
 
 function downByBlob_1(parameters , FileName) {
-    var downloadURL = "../user/download";
+    var downloadURL = "../teacher/download";
     let xhr = new XMLHttpRequest()
     let fileName = FileName + '.zip' // 文件名称
     xhr.open('post', downloadURL, true);
@@ -45,7 +45,7 @@ function downByBlob_1(parameters , FileName) {
 }
 
 function downByBlob_2(parameters , FileName) {
-    var downloadURL = "../user/downloadAll";
+    var downloadURL = "../teacher/downloadAll";
     let xhr = new XMLHttpRequest()
     let fileName = FileName + '.zip' // 文件名称
     xhr.open('post', downloadURL, true);

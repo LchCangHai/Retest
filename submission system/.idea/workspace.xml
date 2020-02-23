@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41e65c28-c9b8-4d85-bad0-a97d2bd901eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/manage_administrator.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/manage_administrator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/add_teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/add_teacher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/stu_table1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stu_table1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/stu_table2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stu_table2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tea_table1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tea_table1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tea_table2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tea_table2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/teacher_homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/teacher_homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tea_download.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tea_download.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +90,7 @@
       <workItem from="1582290449585" duration="8342000" />
       <workItem from="1582298925220" duration="777000" />
       <workItem from="1582377462089" duration="674000" />
-      <workItem from="1582426937143" duration="4453000" />
+      <workItem from="1582426937143" duration="5104000" />
     </task>
     <servers />
   </component>
