@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41e65c28-c9b8-4d85-bad0-a97d2bd901eb" name="Default Changelist" comment="" />
+    <list default="true" id="41e65c28-c9b8-4d85-bad0-a97d2bd901eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/manage_administrator.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/manage_administrator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/add_teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/add_teacher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/stu_table1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stu_table1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/stu_table2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/stu_table2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tea_table1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tea_table1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tea_table2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tea_table2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/teacher_homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/teacher_homepage.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +26,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1X3cDVOTtmMS8t2miyAg4jaFVAH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -82,10 +95,25 @@
       <workItem from="1582251693449" duration="8070000" />
       <workItem from="1582290449585" duration="8342000" />
       <workItem from="1582298925220" duration="777000" />
+      <workItem from="1582377462089" duration="674000" />
+      <workItem from="1582426937143" duration="4453000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

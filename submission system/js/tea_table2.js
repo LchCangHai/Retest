@@ -58,7 +58,11 @@
                     }
                     setTable();
                     pageAll = (testDataList.length) / count;
-                    $('.totlePage1').html(parseInt(pageAll+0.5));
+                    let tem = parseInt(pageAll);
+                    if(tem < pageAll) {
+                        tem += 1;
+                    }
+                    $('.totlePage1').html(tem);
                 } else {
                     console.log('获取学生已提交作业失败');
                 }

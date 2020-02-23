@@ -1,4 +1,6 @@
 $(function () {
+    let iffile = $('#fileHelpBlock');
+    iffile.html('');
     jeDate("#dtime",{
         theme:{ bgcolor:"#00A1CB",color:"#ffffff", pnColor:"#00CCFF"},
         format:'YYYY/MM/DD hh:mm:ss ',
@@ -236,6 +238,11 @@ $('.upload1').change(function () {
 })
 
 $('.add').click(function () {
+    let iffile = $('#fileHelpBlock');
+    if(iffile.html() == '' || iffile.html() == null || iffile.html().length == 0){
+        confirm('请选择文件！');
+        return;
+    }
     let form = document.querySelector('.addForm');
     let formData1 = new FormData(form);
 
